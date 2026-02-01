@@ -1,4 +1,4 @@
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, Terminal } from "lucide-react";
 import "./Header.scss";
 import { useEffect, useState } from "react";
 
@@ -25,7 +25,11 @@ export default function Header() {
 
     return (<>
         <header>
-            <span className="text-2xl font-bold text-(--color-h1) name">Daniel Mora</span>
+            <div className="nameContainer">
+                <Terminal color="var(--color-h1)" />
+                <span className="text-3xl font-bold text-(--color-h1) name">Daniel Mora</span>
+
+            </div>
 
             {/* <nav>
                 <Link key={'Inicio'} to={'/'} className="text-xl">

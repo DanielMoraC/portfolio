@@ -3,6 +3,12 @@ import "./Hero.scss";
 import { useEffect, useState } from "react";
 import { Tooltip } from "react-tooltip";
 import Button from "../../../../components/button/Button";
+import foto from "/src/assets/foto.png"
+import linkedin from "/src/assets/linkedin.svg"
+import downloadDark from "/src/assets/download-dark.svg"
+import downloadLight from "/src/assets/download-light.svg"
+import copyDark from "/src/assets/copy-dark.svg"
+import copyLight from "/src/assets/copy-light.svg"
 
 export default function Hero() {
 
@@ -31,7 +37,7 @@ export default function Hero() {
     return (
         <div className="hero md:pt-[15%] md:mb-20 mb-10 pt-5">
             <div className="lg:flex hidden image">
-                <img src="/src/assets/foto.png" alt="Imagen Daniel Mora" />
+                <img src={foto} alt="Foto Daniel Mora Casero" />
             </div>
 
             <main className="info">
@@ -51,7 +57,7 @@ export default function Hero() {
                             handleClick={undefined}
                             text="LinkedIn"
                             type="tertiary"
-                            image="/src/assets/linkedin.svg" />
+                            image={linkedin} />
                     </Link>
 
                     <Link to={"/CV_Daniel_Mora.pdf"} target="_blank">
@@ -59,7 +65,7 @@ export default function Hero() {
                             handleClick={undefined}
                             text="CV"
                             type="tertiary"
-                            image={colorScheme == 'dark' ? "/src/assets/download-dark.svg" : "/src/assets/download-light.svg"} />
+                            image={colorScheme == 'dark' ? downloadDark : downloadLight} />
                     </Link>
 
                     <div data-tooltip-id="copy">
@@ -67,7 +73,7 @@ export default function Hero() {
                             handleClick={copyEmail}
                             text="dmora.programador@gmail.com"
                             type="tertiary"
-                            image={colorScheme == 'dark' ? "/src/assets/copy-dark.svg" : "/src/assets/copy-light.svg"} />
+                            image={colorScheme == 'dark' ? copyDark : copyLight} />
                     </div>
 
                     <Tooltip

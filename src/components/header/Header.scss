@@ -2,15 +2,21 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: center;
   padding: 10px;
   background-color: var(--background-color-header);
   position: sticky;
   top: 0;
   backdrop-filter: blur(7px);
 
-  .name {
-    font-family: var(--font-family-name);
+  .nameContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .name {
+      font-family: var(--font-family-name);
+    }
   }
 
   nav {

@@ -17,7 +17,7 @@
       padding: 10px;
       background-image: url("/src/assets/foto.png");
       background-size: cover;
-      background-color: rgb(0 0 0 / 47%);
+      background-color: var(--border-color-images);
       background-blend-mode: hue;
     }
   }

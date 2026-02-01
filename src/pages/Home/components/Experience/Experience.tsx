@@ -1,7 +1,9 @@
-// import { Link } from "react-router"
 import { AppWindow } from "lucide-react"
 import "./Experience.scss"
-// import Button from "../../../../components/button/Button"
+import angular from "/src/assets/angular.svg"
+import typescript from "/src/assets/typescript.svg"
+import ionic from "/src/assets/ionic.svg"
+import primeng from "/src/assets/primeng.svg"
 
 export default function Experience() {
 
@@ -18,10 +20,10 @@ export default function Experience() {
                     <div className="info">
                         <h4 className="md:text-2xl text-xl mb-2">Indra - Minsait</h4>
                         <div className="cardTools mb-2">
-                            <img src="/src/assets/angular.svg" alt="Angular" />
-                            <img src="/src/assets/typescript.svg" alt="TypeScript" />
-                            <img src="/src/assets/ionic.svg" alt="Ionic" />
-                            <img src="/src/assets/primeng.svg" alt="PriimeNG" />
+                            <img src={angular} alt="Angular" />
+                            <img src={typescript} alt="TypeScript" />
+                            <img src={ionic} alt="Ionic" />
+                            <img src={primeng} alt="PriimeNG" />
                         </div>
                         <p className="text-gray-400">Marzo 2024 - Ahora</p>
                         <p>Programador Front-End tanto en Web como en aplicaciones móvil con <span className="text-red-500 font-bold">Angular</span>&#44; <span className="text-blue-500 font-bold">Ionic</span> y <span className="text-blue-500 font-bold">TypeScript</span> en varias versiones distintas con la libreria <span className="text-red-500 font-bold">PrimeNG</span>.</p>

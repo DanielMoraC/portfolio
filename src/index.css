@@ -26,6 +26,7 @@ html:not(.light) {
   --background-color-header: #242424b8;
   --color-h1: #846FC3;
   --h2-color: #E0DBF0;
+  --border-color-images: #00000078;
 
   /* SCROLL-BAR */
   --scroll-bar-color-track: #211e22;
@@ -80,6 +81,7 @@ html.light {
   --background-color-header: #ffffff3b;
   --color-h1: #513C90;
   --h2-color: #7c64c5;
+  --border-color-images: #ffffff78;
 
   /* SCROLL-BAR */
   --scroll-bar-color-track: #f9eaff;
