@@ -1,0 +1,38 @@
+.experience {
+  margin: auto;
+  margin-bottom: 50px;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .card {
+      display: flex;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .line {
+          height: 100%;
+          border-left: 1px solid var(--button-primary-color-border);
+        }
+      }
+
+      .info {
+        .cardTools {
+          display: flex;
+          flex-direction: row;
+          gap: 5px;
+
+          img {
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+}

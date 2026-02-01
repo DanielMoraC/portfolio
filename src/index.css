@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Space Mono", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--color);
+  background: linear-gradient(180deg, var(--background-color-up), var(--background-color-down));
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  scrollbar-color: var(--scroll-bar-color-thumb) var(--scroll-bar-color-track);
+}
+
+html.dark,
+html:not(.light) {
+  --font-family-name: "Jersey 10", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --color: rgba(255, 255, 255);
+  --background-color-up: #242424;
+  --background-color-down: #211e22;
+  --background-color-header: #242424b8;
+  --color-h1: #846FC3;
+  --h2-color: #E0DBF0;
+
+  /* SCROLL-BAR */
+  --scroll-bar-color-track: #211e22;
+  --scroll-bar-color-thumb: #846FC3;
+
+  /* LINK */
+  --link-color-hover: #A393D2;
+  --link-color-active: #C2B7E1;
+
+  /* BUTTONS */
+  --button-primary-color: black;
+  --button-primary-color-border: #846FC3;
+  --button-primary-color-background: #846FC3;
+
+  --button-primary-color-border-hover: #A393D2;
+  --button-primary-color-background-hover: #A393D2;
+
+  --button-primary-color-border-active: #C2B7E1;
+  --button-primary-color-background-active: #C2B7E1;
+
+  --button-tertiary-color: #846FC3;
+  --button-tertiary-color-border: #846FC3;
+  --button-tertiary-color-background: transparent;
+
+  --button-tertiary-color-hover: #846FC3;
+  --button-tertiary-color-border-hover: #846FC3;
+  --button-tertiary-color-background-hover: #140F24;
+
+  --button-tertiary-color-active: #A393D2;
+  --button-tertiary-color-border-active: #A393D2;
+  --button-tertiary-color-background-active: #140F24;
+
+  /* SWITCH */
+  --switch-color-border: #846FC3;
+  --switch-color-background: #434343;
+  --switch-color-circle: black;
+
+  /* CARD */
+  --card-color-background-up: #440066;
+  --card-color-background-down: #220033;
+
+  /* TOOLS CARD */
+  --tools-card-color-border: #846FC3;
+  --tools-card-color-background: #220033;
+}
+
+html.light {
+  --font-family-name: "Jersey 10", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --color: #213547;
+  --background-color-up: #ffffff;
+  --background-color-down: #f9eaff;
+  --background-color-header: #ffffff3b;
+  --color-h1: #513C90;
+  --h2-color: #7c64c5;
+
+  /* SCROLL-BAR */
+  --scroll-bar-color-track: #f9eaff;
+  --scroll-bar-color-thumb: #513C90;
+
+  /* LINK */
+  --link-color-hover: #3D2D6C;
+  --link-color-active: #513C90;
+
+  /* BUTTONS */
+  --button-primary-color: white;
+  --button-primary-color-border: #513C90;
+  --button-primary-color-background: #513C90;
+
+  --button-primary-color-border-hover: #3D2D6C;
+  --button-primary-color-background-hover: #3D2D6C;
+
+  --button-primary-color-border-active: #291E48;
+  --button-primary-color-background-active: #291E48;
+
+  --button-tertiary-color: #513C90;
+  --button-tertiary-color-border: #513C90;
+  --button-tertiary-color-background: transparent;
+
+  --button-tertiary-color-hover: #513C90;
+  --button-tertiary-color-border-hover: #513C90;
+  --button-tertiary-color-background-hover: #F0EDF7;
+
+  --button-tertiary-color-active: #3D2D6C;
+  --button-tertiary-color-border-active: #3D2D6C;
+  --button-tertiary-color-background-active: #E0DBF0;
+
+  /* SWITCH */
+  --switch-color-border: #846FC3;
+  --switch-color-background: #ccc;
+  --switch-color-circle: white;
+
+  /* CARD */
+  --card-color-background-up: #e3abff;
+  --card-color-background-down: #F7E5FF;
+
+  /* TOOLS CARD */
+  --tools-card-color-border: #513C90;
+  --tools-card-color-background: #EECCFF;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.transparent {
+  background-color: transparent;
+  color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 0px;
+  width: 0px;
+  height: 0px;
+}
+
+a {
+
+  &:hover {
+    color: var(--link-color-hover) !important;
+  }
+
+  &:active {
+    color: var(--link-color-active) !important;
+  }
+}
+
+h2 {
+  color: var(--h2-color);
+}
+
+.tooltip {
+  border-radius: 10px !important;
+}

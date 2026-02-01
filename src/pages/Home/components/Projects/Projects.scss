@@ -1,0 +1,54 @@
+.projects {
+  margin: auto;
+  margin-bottom: 50px;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .card {
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 20px;
+      max-width: 400px;
+      background: linear-gradient(
+        180deg,
+        var(--card-color-background-up),
+        var(--card-color-background-down)
+      );
+
+      &.long {
+        flex-direction: row-reverse;
+        max-width: 100%;
+        flex-wrap: nowrap;
+      }
+
+      .image {
+        width: 100%;
+        max-width: 500px;
+
+        img {
+          object-fit: cover;
+          border-radius: 20px;
+          // width: 100%;
+        }
+      }
+
+      .info {
+        padding: 10px 20px;
+
+        .cardTools {
+          display: flex;
+          flex-direction: row;
+          gap: 5px;
+
+          img {
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+}

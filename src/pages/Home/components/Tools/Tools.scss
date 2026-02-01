@@ -1,0 +1,31 @@
+.tools {
+  margin: auto;
+  margin-bottom: 50px;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .type {
+      padding: 15px;
+      flex-direction: column;
+      background: linear-gradient(
+        45deg,
+        var(--tools-card-color-background),
+        transparent
+      );
+      border: 1px solid var(--tools-card-color-border);
+      border-radius: 20px;
+      height: fit-content;
+
+      .chipContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    }
+  }
+}

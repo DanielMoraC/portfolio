@@ -1,0 +1,11 @@
+.chip {
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  border-radius: 60px;
+
+  img {
+    width: 25px;
+  }
+}
