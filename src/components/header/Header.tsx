@@ -1,55 +1,58 @@
-import { Moon, Sun, Terminal } from "lucide-react";
+import { Terminal } from "lucide-react";
 import "./Header.scss";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { Link, useLocation } from "react-router";
+import Hamburger from "hamburger-react";
+import ThemeSwitch from "../themeSwitch/ThemeSwitch";
 
 export default function Header() {
 
-    const [dark, setDark] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches ? true : false)
-
-    useEffect(() => {
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-            const newColorScheme = event.matches ? true : false;
-            setDark(newColorScheme)
-        });
-    }, [])
-
-    useEffect(() => {
-        if (dark) {
-            document.documentElement.classList.add('dark')
-            document.documentElement.classList.remove('light')
-        } else {
-            document.documentElement.classList.add('light')
-            document.documentElement.classList.remove('dark')
-        }
-    }, [dark])
+    const path = useLocation()
+    const [toggledHambuerger, setToggledHamburger] = useState(false)
 
     return (<>
-        <header>
-            <div className="nameContainer">
+        <header className="md:justify-around justify-between">
+            <div className="nameContainer md:ml-0 ml-5">
                 <Terminal color="var(--color-h1)" />
                 <span className="text-3xl font-bold text-(--color-h1) name">Daniel Mora</span>
 
             </div>
 
-            {/* <nav>
+            <nav className="md:flex hidden">
                 <Link key={'Inicio'} to={'/'} className="text-xl">
-                    <span>Inicio</span>
+                    <span className={path.pathname == '/' || path.pathname == '' ? 'aSelected' : ''}>Inicio</span>
                 </Link>
                 <Link to="/about-me" className="text-xl">
-                    <span>Sobre mi</span>
+                    <span className={path.pathname == '/about-me' ? 'aSelected' : ''}>Sobre mi</span>
                 </Link>
-            </nav> */}
+            </nav>
 
-            <div className="theme">
-                <label className="switch">
-                    <input type="checkbox" checked={dark} onChange={(e) => setDark(e.target.checked)} />
-                    <span className="slider">
-                        {dark ? <Moon /> : <Sun />}
-                    </span>
-                </label>
+            <div className="md:flex hidden">
+                <ThemeSwitch />
             </div>
 
-            {/* TODO: Añadir botón para el sidebar cuando está en modo móvil */}
+            <div className='md:hidden flex mr-5 hamburger'>
+                <Hamburger rounded toggled={toggledHambuerger} toggle={setToggledHamburger} />
+            </div>
+
+            <div className={toggledHambuerger ? 'contents' : 'hidden'}>
+                <div className="sidebar">
+                    <div>
+                        <ThemeSwitch />
+                    </div>
+
+                    <nav>
+                        <Link key={'Inicio'} to={'/'} className="text-xl" onClick={() => setToggledHamburger(path.pathname == '/' || path.pathname == '')}>
+                            <span className={path.pathname == '/' || path.pathname == '' ? 'aSelected' : ''}>Inicio</span>
+                        </Link>
+                        <Link to="/about-me" className="text-xl" onClick={() => setToggledHamburger(path.pathname == '/about-me')}>
+                            <span className={path.pathname == '/about-me' ? 'aSelected' : ''}>Sobre mi</span>
+                        </Link>
+                    </nav>
+                </div>
+
+                <div className='mask md:hidden' onClick={() => setToggledHamburger(false)}></div>
+            </div>
         </header>
     </>)
 }

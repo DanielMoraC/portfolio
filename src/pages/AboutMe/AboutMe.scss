@@ -1,0 +1,22 @@
+.aboutMe {
+  .info {
+    display: flow;
+
+    img {
+      max-width: 800px;
+      min-width: 300px;
+      width: 30%;
+      object-fit: cover;
+      height: 100%;
+      border-radius: 100%;
+      padding: 10px;
+      background-image: url("/src/assets/foto.png");
+      background-size: cover;
+      background-color: var(--border-color-images);
+      background-blend-mode: hue;
+      float: left;
+      shape-outside: circle();
+      margin: 20px;
+    }
+  }
+}

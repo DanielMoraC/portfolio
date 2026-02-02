@@ -5,6 +5,7 @@ import NotFound from './pages/NotFound/NotFound'
 import Header from './components/header/Header'
 // import Footer from './components/footer/Footer'
 import { useEffect } from 'react'
+import AboutMe from './pages/AboutMe/AbountMe'
 
 export default function App() {
 
@@ -26,8 +27,7 @@ export default function App() {
       <div className='page'>
         <Routes>
           <Route path="/" element={<Home />} errorElement={<NotFound />}></Route>
-          {/* TODO: Añadir la ruta de about me */}
-          {/* <Route path="/about-me" element={<Home />} errorElement={<NotFound />}></Route> */}
+          <Route path="/about-me" element={<AboutMe />} errorElement={<NotFound />}></Route>
           <Route path="*" element={<NotFound />} errorElement={<NotFound />}></Route>
         </Routes>
       </div>
