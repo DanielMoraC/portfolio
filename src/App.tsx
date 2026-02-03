@@ -1,10 +1,11 @@
 import './App.scss'
 import { BrowserRouter, Route, Routes } from 'react-router'
-import Home from './pages/Home/Home'
-import NotFound from './pages/NotFound/NotFound'
 import Header from './components/header/Header'
-// import Footer from './components/footer/Footer'
 import { useEffect } from 'react'
+import HomePage from './pages/HomePage/HomePage'
+import AboutMePage from './pages/AboutMePage/AbountMePage'
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage'
+// import Footer from './components/footer/Footer'
 
 export default function App() {
 
@@ -25,10 +26,9 @@ export default function App() {
 
       <div className='page'>
         <Routes>
-          <Route path="/" element={<Home />} errorElement={<NotFound />}></Route>
-          {/* TODO: Añadir la ruta de about me */}
-          {/* <Route path="/about-me" element={<Home />} errorElement={<NotFound />}></Route> */}
-          <Route path="*" element={<NotFound />} errorElement={<NotFound />}></Route>
+          <Route path="/" element={<HomePage />} errorElement={<NotFoundPage />}></Route>
+          <Route path="/about-me" element={<AboutMePage />} errorElement={<NotFoundPage />}></Route>
+          <Route path="*" element={<NotFoundPage />} errorElement={<NotFoundPage />}></Route>
         </Routes>
       </div>
 

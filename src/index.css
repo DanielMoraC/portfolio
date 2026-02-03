@@ -27,6 +27,7 @@ html:not(.light) {
   --color-h1: #846FC3;
   --h2-color: #E0DBF0;
   --border-color-images: #00000078;
+  --sidebar-color: #2d2d2d;
 
   /* SCROLL-BAR */
   --scroll-bar-color-track: #211e22;
@@ -82,6 +83,7 @@ html.light {
   --color-h1: #513C90;
   --h2-color: #7c64c5;
   --border-color-images: #ffffff78;
+  --sidebar-color: #fbf2ff;
 
   /* SCROLL-BAR */
   --scroll-bar-color-track: #f9eaff;
