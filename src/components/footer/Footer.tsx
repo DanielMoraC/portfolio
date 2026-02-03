@@ -1,8 +1,9 @@
+import "./Footer.scss"
 
 export default function Footer() {
     return (
         <footer>
-            {/* TODO: Añadir botones de redes sociales y mi correo */}
+            <p>Página web creada por dmora.programador@gmail.com</p>
         </footer>
     )
 }

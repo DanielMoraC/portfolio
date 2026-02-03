@@ -1,8 +1,8 @@
 import { MonitorOff } from "lucide-react"
-import "./NotFound.scss"
+import "./NotFoundPage.scss"
 import { Link } from "react-router"
 
-export default function NotFound() {
+export default function NotFoundPage() {
     return (
         <main className="notFound">
             <MonitorOff className="pt-20 md:pt-[15%] mb-5" />

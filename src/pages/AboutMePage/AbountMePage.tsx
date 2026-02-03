@@ -1,7 +1,7 @@
-import "./AboutMe.scss"
+import "./AboutMePage.scss"
 import foto from "/src/assets/foto.png"
 
-export default function AboutMe() {
+export default function AboutMePage() {
 
     return (
         <div className="aboutMe md:pt-[15%] md:mb-20 mb-10 pt-5">
