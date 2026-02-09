@@ -22,7 +22,7 @@ header {
 
   nav {
     justify-content: space-around;
-    gap: 27px;
+    gap: 13px;
 
     .aSelected {
       color: var(--link-color-active);
@@ -37,7 +37,7 @@ header {
 .sidebar {
   position: fixed;
   width: 40dvw;
-  height: 100dvh;
+  height: 92.3dvh;
   z-index: 3;
   top: 65px;
   right: 0;
@@ -48,8 +48,8 @@ header {
 
   nav {
     justify-content: flex-start;
-    height: 100%;
-    margin: 10px;
+    flex: 1;
+    margin: 20px 4px;
     display: flex;
     flex-direction: column;
   }
@@ -64,4 +64,52 @@ header {
   backdrop-filter: blur(7px);
   left: 0;
   top: 0;
+}
+
+.langButton {
+  button {
+    padding: 5px !important;
+
+    svg {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  &.aside .dropdown {
+    bottom: 56px !important;
+  }
+
+  .dropdown {
+    position: absolute;
+    bottom: -45px;
+    border-radius: 5px;
+    border: 1px solid var(--button-tertiary-color-border);
+    background-color: var(--background-color-up);
+    z-index: 2;
+
+    & > div {
+      border-radius: 5px;
+      padding: 0 5px;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--button-tertiary-color-hover);
+        background-color: var(--button-tertiary-color-background-hover);
+      }
+
+      &.selected {
+        color: var(--button-tertiary-color-active);
+        background-color: var(--button-tertiary-color-background-active);
+      }
+    }
+  }
+
+  .maskLang {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+  }
 }

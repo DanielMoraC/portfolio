@@ -1,6 +1,7 @@
 import ReactDOM from "react-dom/client";
 import './index.css'
 import App from './App.tsx'
+import './i18n.tsx'
 
 const root = document.getElementById("root")!;
 

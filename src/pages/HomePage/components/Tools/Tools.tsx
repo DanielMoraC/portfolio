@@ -26,16 +26,19 @@ import docker from "/src/assets/docker.svg"
 import sql from "/src/assets/sql.svg"
 import mysql from "/src/assets/mysql.svg"
 import mariadb from "/src/assets/mariadb.svg"
+import { useTranslation } from "react-i18next"
 
 export default function Tools() {
 
+    const { t } = useTranslation()
+
     return (
         <section className="tools md:w-[85%]">
-            <h2 className="md:text-3xl text-2xl font-bold mb-5">Técnologías</h2>
+            <h2 className="md:text-3xl text-2xl font-bold mb-5">{t('Tools.title')}</h2>
             <div className="container">
 
                 <div className="type flex w-full">
-                    <h3 className="md:text-2xl text-xl mb-3">Front-end</h3>
+                    <h3 className="md:text-2xl text-xl mb-3">{t('Tools.front')}</h3>
                     <div className="chipContainer">
                         <Chip svg={angular} border="border-red-500" background="to-red-500" text="Angular" />
                         <Chip svg={react} border="border-sky-400" background="to-sky-400" text="React" />
@@ -52,7 +55,7 @@ export default function Tools() {
                 </div>
 
                 <div className="type flex flex-1">
-                    <h3 className="md:text-2xl text-xl mb-3">Herramientas</h3>
+                    <h3 className="md:text-2xl text-xl mb-3">{t('Tools.tools')}</h3>
                     <div className="chipContainer">
                         <Chip svg={vscode} border="border-blue-500" background="to-blue-500" text="VS Code" />
                         <Chip svg={jetbrains} border="border-violet-500" background="to-violet-500" text="JetBrains" />
@@ -67,7 +70,7 @@ export default function Tools() {
                 </div>
 
                 <div className="type flex flex-1">
-                    <h3 className="md:text-2xl text-xl mb-3">Conocimientos básicos</h3>
+                    <h3 className="md:text-2xl text-xl mb-3">{t('Tools.basic')}</h3>
                     <div className="chipContainer">
                         <Chip svg={php} border="border-blue-300" background="to-blue-300" text="PHP" />
                         <Chip svg={symfony} border="border-white" background="to-[#ffffff94]" text="Symfony" />

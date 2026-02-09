@@ -1,0 +1,55 @@
+{
+    "Generic": {
+        "with": "with",
+        "and": "and",
+        "now": "Now",
+        "march": "March"
+    },
+    "Header": {
+        "home": "Home",
+        "about": "About me"
+    },
+    "AboutMe": {
+        "hello": "Hello, I'm",
+        "subtitle": "Front-End Developer",
+        "yearsExperience": " years of experience with ",
+        "experienceTools": " using Ionic for mobile applications and PrimeNG.",
+        "knowledgeOf1": "I also have knowledge of ",
+        "knowledgeOf2": " with Vite and basic knowledge of back-end with PHP and Symfony and databases.",
+        "working": "I'm currently working at Indra and creating personal projects.",
+        "residence": "I'm residing in Valencia (Spain).",
+        "tecnic": " I'm a technician in ",
+        "microinformatic": "microinformatic systems and networks",
+        "superior": " and superior technician in ",
+        "webDevelopment": "web development"
+    },
+    "Hero": {
+        "hello": "Hello, I'm",
+        "subtitle": "Front-End Developer",
+        "yearsExperience": " years of experience with ",
+        "textInfo": " I'm a Systems and Web Development technician. Knowledge of databases and back-end with PHP and Symfony basic.",
+        "emailCopy": "Email copied"
+    },
+    "Experience": {
+        "title": "Work Experience",
+        "INDRA": {
+            "text1": "Front-End developer for both web and mobile applications with ",
+            "text2": " in several different versions with the library ",
+            "text3": "Sermas project, Digital Transformation of the Health Assistance for the Community of Madrid (Spain)"
+        }
+    },
+    "Projects": {
+        "title": "Projects",
+        "LOLA": {
+            "text1": "Front-End developer with ",
+            "text2": "In this project, a simple web page was created for Lola Folie to present her published records."
+        }
+    },
+    "Tools": {
+        "title": "Technologies",
+        "front": "Front-end",
+        "tools": "Tools",
+        "basic": "Basic knowledge"
+    },
+    "404Title": "404 Page not found"
+}

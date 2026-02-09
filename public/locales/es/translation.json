@@ -1,0 +1,55 @@
+{
+    "Generic": {
+        "with": "con",
+        "and": "y",
+        "now": "Ahora",
+        "march": "Marzo"
+    },
+    "Header": {
+        "home": "Inicio",
+        "about": "Sobre mi"
+    },
+    "AboutMe": {
+        "hello": "Hola, soy",
+        "subtitle": "Desarrollador Front-End",
+        "yearsExperience": " años de experiencia con ",
+        "experienceTools": ", usando Ionic para aplicaciones móvil y PrimeNG.",
+        "knowledgeOf1": "También tengo conocimientos de ",
+        "knowledgeOf2": " con Vite y conocimientos básicos de back-end con PHP y Symfony y bases de datos.",
+        "working": "Actualmente estoy trabajando en Indra y creando proyectos personales.",
+        "residence": "Estoy residiendo en Valencia (España).",
+        "tecnic": " Soy técnico en ",
+        "microinformatic": "sistemas microinformáticos y redes",
+        "superior": " y técnico superior en ",
+        "webDevelopment": "desarrollo de aplicaciones web"
+    },
+    "Hero": {
+        "hello": "Hola, soy",
+        "subtitle": "Desarrollador Front-End",
+        "yearsExperience": " años de experiencia con ",
+        "textInfo": ". Técnico de Sistemas y Desarrollo Web. Conocimientos de base de datos y Back-End con PHP y Symfony básicos.",
+        "emailCopy": "Correo copiado"
+    },
+    "Experience": {
+        "title": "Experiencia laboral",
+        "INDRA": {
+            "text1": "Programador Front-End tanto en Web como en aplicaciones móvil con ",
+            "text2": " en varias versiones distintas con la libreria ",
+            "text3": "Proyecto de Sermas, Transformación digital de la asistencia sanitaria para la Comunidad de Madrid (España)"
+        }
+    },
+    "Projects": {
+        "title": "Proyectos",
+        "LOLA": {
+            "text1": "Programador Front-End con ",
+            "text2": "En este proyecto se creó una página web simple para que la autora Lola Folie pueda presentar sus libros publicados."
+        }
+    },
+    "Tools": {
+        "title": "Tecnologías",
+        "front": "Front-end",
+        "tools": "Herramientas",
+        "basic": "Conocimientos básicos"
+    },
+    "404Title": "404 No se ha encontrado la página"
+}

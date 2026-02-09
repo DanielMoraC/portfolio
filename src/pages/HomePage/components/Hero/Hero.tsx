@@ -9,9 +9,11 @@ import downloadDark from "/src/assets/download-dark.svg"
 import downloadLight from "/src/assets/download-light.svg"
 import copyDark from "/src/assets/copy-dark.svg"
 import copyLight from "/src/assets/copy-light.svg"
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
 
+    const { t } = useTranslation();
     const [colorScheme, setColorScheme] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light")
 
     useEffect(() => {
@@ -42,13 +44,13 @@ export default function Hero() {
 
             <main className="info">
                 <div className="intro">
-                    <span className="md:text-xl">Hola, soy</span>
+                    <span className="md:text-xl">{t('Hero.hello')}</span>
                     <h1 className="md:text-6xl text-4xl font-bold text-(--color-h1)">Daniel Mora Casero</h1>
-                    <h2 className="md:text-3xl text-xl">Desarrollador Front-End</h2>
+                    <h2 className="md:text-3xl text-xl">{t('Hero.subtitle')}</h2>
                 </div>
 
                 <div className="description">
-                    <p><span className="text-orange-300">&#43;2</span> años de experiencia con <span className="text-red-500 font-bold">Angular</span> y <span className="text-sky-400 font-bold">React</span>. Técnico de Sistemas y Desarrollo Web. Conocimientos de base de datos y Back-End con PHP y Symfony básicos.</p>
+                    <p><span className="text-orange-300">&#43;2</span>{t('Hero.yearsExperience')}<span className="text-red-500 font-bold">Angular</span> y <span className="text-sky-400 font-bold">React</span>{t('Hero.textInfo')}</p>
                 </div>
 
                 <div className="links">
@@ -78,7 +80,7 @@ export default function Hero() {
 
                     <Tooltip
                         id="copy"
-                        content="Correo copiado"
+                        content={t('Hero.emailCopy')}
                         delayHide={100}
                         openOnClick
                         place="bottom"
